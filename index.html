@@ -21,8 +21,57 @@
       <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Oliver Gill</h2>
         <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
     <a href="https://www.linkedin.com/in/olivergill/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
+    <p id="message">yes this is actually his email address</p>
   </div>
 </div>
+<script>
+    const translations = {
+      af: "ja, dit is eintlik sy e-posadres",
+      ar: "نعم، هذا بالفعل عنوان بريده الإلكتروني",
+      bg: "да, това всъщност е неговият имейл адрес",
+      bn: "হ্যাঁ, এটি আসলেই তার ইমেইল ঠিকানা",
+      ca: "sí, aquesta és realment la seva adreça de correu electrònic",
+      cs: "ano, to je skutečně jeho e-mailová adresa",
+      da: "ja, dette er faktisk hans e-mailadresse",
+      de: "ja, das ist tatsächlich seine E-Mail-Adresse",
+      el: "ναι, αυτή είναι πράγματι η διεύθυνση email του",
+      en: "yes this is actually his email address",
+      es: "sí, esta es realmente su dirección de correo electrónico",
+      et: "jah, see on tõepoolest tema e-posti aadress",
+      fa: "بله، این واقعاً آدرس ایمیل اوست",
+      fi: "kyllä, tämä on oikeasti hänen sähköpostiosoitteensa",
+      fil: "oo, ito nga talaga ang kanyang email address",
+      fr: "oui, c'est bien son adresse e-mail",
+      he: "כן, זה באמת כתובת האימייל שלו",
+      hi: "हाँ, यह वास्तव में उसका ईमेल पता है",
+      hr: "da, ovo je zapravo njegova e-mail adresa",
+      hu: "igen, ez valójában az ő e-mail címe",
+      id: "ya, ini benar-benar alamat emailnya",
+      it: "sì, questo è davvero il suo indirizzo email",
+      ja: "はい、これは実際に彼のメールアドレスです",
+      ko: "네, 이것은 실제로 그의 이메일 주소입니다",
+      lt: "taip, tai iš tikrųjų jo el. pašto adresas",
+      lv: "jā, tas patiešām ir viņa e-pasta adrese",
+      ms: "ya, ini sebenarnya alamat emelnya",
+      nl: "ja, dit is eigenlijk zijn e‑mailadres",
+      no: "ja, dette er faktisk e‑postadressen hans",
+      pl: "tak, to naprawdę jest jego adres e-mail",
+      pt: "sim, este é realmente o e‑mail dele",
+      ro: "da, acesta este de fapt adresa lui de e‑mail",
+      ru: "да, это действительно его адрес электронной почты",
+      sk: "áno, toto je skutočne jeho e‑mailová adresa",
+      sl: "da, to je v resnici njegov e‑poštni naslov",
+      sv: "ja, detta är faktiskt hans e‑postadress",
+      th: "ใช่ นี่คือที่อยู่อีเมลของเขาจริงๆ",
+      tr: "evet, bu gerçekten onun e‑posta adresi",
+      uk: "так, це справді його електронна адреса",
+      vi: "vâng, đây thực sự là địa chỉ email của anh ấy",
+      zh: "是的，这确实是他的电子邮件地址"
+    };
 
+    const userLang = navigator.language.slice(0, 2);
+    const message = translations[userLang] || translations["en"];
+    document.getElementById("message").textContent = message;
+  </script>
 </body>
 </html>
